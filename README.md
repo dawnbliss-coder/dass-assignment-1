@@ -14,12 +14,45 @@ Felicity lets club organizers create and manage events (normal or merchandise-ba
 
 ## Deployed Website
 
-- Frontend: https://felicity-theta.vercel.app
-- Backend API: https://dass-assignment-1-hvly.onrender.com
+- Frontend: [felicity-priyanka1104s-projects.vercel.app](https://felicity-priyanka1104s-projects.vercel.app/login)
+- Backend API: [https://dass-assignment-1-hvly.onrender.com](https://dass-assignment-1-hvly.onrender.com)
 
 ## Screenshots
 
-_Coming soon._
+
+### Admin
+
+<table>
+<tr><td colspan="3"></td></tr>
+<tr>
+<td><img src="screenshots/admin1.png" alt="admin1" width="400"/></td>
+<td><img src="screenshots/admin2.png" alt="admin1" width="400"/></td>
+<td><img src="screenshots/admin3.png" alt="admin1" width="400"/></td>
+</tr>
+</table>
+
+### Organizer
+
+<table>
+<tr><td colspan="3"></td></tr>
+<tr>
+<td><img src="screenshots/organizer1.png" alt="admin1" width="400"/></td>
+<td><img src="screenshots/organizer2.png" alt="admin1" width="400"/></td>
+<td><img src="screenshots/organizer3.png" alt="admin1" width="400"/></td>
+</tr>
+</table>
+
+### Participant
+
+<table>
+<tr><td colspan="4"></td></tr>
+<tr>
+<td><img src="screenshots/participant1.png" alt="admin1" width="300"/></td>
+<td><img src="screenshots/participant2.png" alt="admin1" width="300"/></td>
+<td><img src="screenshots/participant3.png" alt="admin1" width="300"/></td>
+<td><img src="screenshots/participant4.png" alt="admin1" width="300"/></td>
+</tr>
+</table>
 
 ## Running Locally
 
@@ -32,9 +65,9 @@ _Coming soon._
 ```bash
 cd backend
 npm install
-cp .env.example .env   # then fill in MONGO_URI, JWT_SECRET, etc.
-npm run create-admin   # creates the first admin account (uses ADMIN_* vars from .env)
-npm run dev            # starts the API on http://localhost:8000
+cp .env.example .env   
+npm run create-admin   
+npm run dev           
 ```
 
 ### 2. Frontend
@@ -42,8 +75,8 @@ npm run dev            # starts the API on http://localhost:8000
 ```bash
 cd frontend
 npm install
-cp .env.example .env   # defaults to http://localhost:8000/api
-npm start               # starts the app on http://localhost:3000
+cp .env.example .env   
+npm start              
 ```
 
-Keep both servers running. Register a participant at `/register`, or log in with the admin account created above to create organizer accounts.
+Keep both servers running. 
