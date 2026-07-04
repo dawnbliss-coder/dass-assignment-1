@@ -1,0 +1,83 @@
+.dashboard-header {
+  margin-bottom: 2rem;
+}
+
+.dashboard-header h1 {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.stat-card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.stat-card svg {
+  color: var(--color-primary);
+}
+
+.stat-card h3 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.stat-card p {
+  color: var(--color-text-muted);
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.admin-actions {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.action-card {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.action-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.action-card svg {
+  color: var(--color-primary);
+  margin-bottom: 1rem;
+}
+
+.action-card h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.action-card p {
+  color: var(--color-text-muted);
+  margin: 0;
+}

@@ -1,0 +1,224 @@
+.event-details-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.event-header-section {
+  margin-bottom: 2rem;
+}
+
+.event-title-section {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.event-title-section h1 {
+  font-size: 2.5rem;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.event-type-badge {
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.event-type-badge.normal {
+  background-color: var(--color-info-bg);
+  color: rgb(152, 193, 235);
+}
+
+.event-type-badge.merchandise {
+  background-color: var(--color-warning-bg);
+  color: #f57c00;
+}
+
+.organizer-name {
+  color: var(--color-text-muted);
+  font-size: 1.1rem;
+}
+
+.event-info-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 2rem;
+}
+
+.event-main-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.info-section {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.info-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.details-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.detail-row {
+  display: flex;
+  align-items: start;
+  gap: 1rem;
+}
+
+.detail-row svg {
+  color: var(--color-primary);
+  flex-shrink: 0;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-border-soft);
+  border-radius: 20px;
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.event-registration-section {
+  position: sticky;
+  top: 2rem;
+  height: fit-content;
+}
+
+.registration-form {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.registration-form h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.form-section {
+  margin-bottom: 1.5rem;
+}
+
+.form-section h3 {
+  font-size: 1.1rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.form-field {
+  margin-bottom: 1rem;
+}
+
+.form-field label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.form-field .required {
+  color: rgb(232, 163, 163);
+}
+
+.form-field input,
+.form-field select {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+}
+
+.form-field input:focus,
+.form-field select:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.merchandise-item {
+  padding: 1rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+}
+
+.merchandise-item h4 {
+  margin-bottom: 0.5rem;
+  color: var(--color-navy);
+}
+
+.payment-proof-preview {
+  max-width: 200px;
+  margin-top: 0.5rem;
+  border-radius: var(--radius-sm);
+}
+
+.btn-register {
+  width: 100%;
+  padding: 1rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.registration-blocked {
+  background: rgba(255, 235, 238, 0.14);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  text-align: center;
+  color: var(--color-danger);
+}
+
+.registration-blocked svg {
+  margin-bottom: 1rem;
+}
+
+.error-message {
+  background-color: rgba(255, 238, 238, 0.14);
+  color: rgb(232, 163, 163);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 204, 204, 0.4);
+}
+
+.success-message {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(200, 230, 201, 0.4);
+}
+
+@media (max-width: 968px) {
+  .event-info-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .event-registration-section {
+    position: static;
+  }
+}

@@ -1,0 +1,191 @@
+.manage-organizers-container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.page-header h1 {
+  font-size: 2rem;
+  color: var(--color-navy);
+}
+
+.create-form-card {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.create-form-card h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: var(--color-text-muted);
+  font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--color-primary);
+}
+
+.form-actions {
+  display: flex;
+  gap: 1rem;
+}
+
+.credentials-box {
+  background: rgba(255, 243, 205, 0.14);
+  border: 2px solid var(--color-warning);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  margin-bottom: 2rem;
+}
+
+.credentials-box h3 {
+  color: rgb(200, 185, 142);
+  margin-bottom: 1rem;
+}
+
+.credentials-box p {
+  color: rgb(200, 185, 142);
+  margin-bottom: 0.5rem;
+}
+
+.credentials-box .warning {
+  font-weight: 600;
+  margin-top: 1rem;
+}
+
+.organizers-list {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.organizers-list h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1.5rem;
+}
+
+.organizers-table {
+  overflow-x: auto;
+}
+
+.organizers-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.organizers-table th,
+.organizers-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.organizers-table th {
+  background-color: var(--color-bg);
+  font-weight: 600;
+  color: var(--color-navy);
+}
+
+.btn-delete {
+  background-color: var(--color-danger);
+  color: white;
+  border: none;
+  padding: 0.5rem;
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-delete:hover {
+  background-color: #d32f2f;
+}
+
+.error-message {
+  background-color: rgba(255, 238, 238, 0.14);
+  color: rgb(232, 163, 163);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(255, 204, 204, 0.4);
+}
+
+.success-message {
+  background-color: var(--color-success-bg);
+  color: var(--color-success);
+  padding: 0.75rem;
+  border-radius: var(--radius-sm);
+  margin-bottom: 1rem;
+  border: 1px solid rgba(200, 230, 201, 0.4);
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-primary);
+  color: white;
+  border: none;
+  border-radius: var(--radius-sm);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-secondary {
+  padding: 0.5rem 1rem;
+  background-color: var(--color-bg);
+  color: var(--color-navy);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: var(--color-border);
+}
+
+.empty-state {
+  text-align: center;
+  padding: 3rem;
+  color: var(--color-text-muted);
+}

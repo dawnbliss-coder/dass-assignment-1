@@ -1,0 +1,164 @@
+.clubs-header {
+  margin-bottom: 2rem;
+}
+
+.clubs-header h1 {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.clubs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 1.5rem;
+}
+
+.club-card {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.club-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.club-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 1rem;
+}
+
+.club-header h3 {
+  font-size: 1.25rem;
+  color: var(--color-navy);
+  margin: 0;
+}
+
+.club-category {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.25rem 0.75rem;
+  background-color: var(--color-border-soft);
+  border-radius: var(--radius-lg);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
+
+.club-description {
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+  line-height: 1.6;
+}
+
+.club-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.club-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.btn-follow,
+.btn-view {
+  flex: 1;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-sm);
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.9rem;
+  transition: all var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.btn-follow {
+  background-color: var(--color-bg);
+  color: var(--color-navy);
+  border: 1px solid var(--color-border);
+}
+
+.btn-follow:hover {
+  background-color: var(--color-border);
+}
+
+.btn-follow.following {
+  background-color: var(--color-primary);
+  color: white;
+  border-color: var(--color-primary);
+}
+
+.btn-follow.following:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.btn-view {
+  background-color: var(--color-primary);
+  color: white;
+}
+
+.btn-view:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.organizer-detail-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.organizer-info-card {
+  background: var(--color-surface);
+  padding: 2rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.organizer-info-card h1 {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}
+
+.organizer-category {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+  color: var(--color-text-muted);
+}
+
+.organizer-description {
+  color: var(--color-text-muted);
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+.organizer-contact {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--color-text-muted);
+}
+
+.events-section {
+  margin-bottom: 2rem;
+}
+
+.events-section h2 {
+  font-size: 1.5rem;
+  color: var(--color-navy);
+  margin-bottom: 1rem;
+}

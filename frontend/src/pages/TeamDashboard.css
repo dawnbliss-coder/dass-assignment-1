@@ -1,0 +1,257 @@
+.team-dashboard {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 24px 0;
+  }
+  
+  .team-page-header {
+    margin-bottom: 28px;
+  }
+  
+  .team-page-header h1 { margin: 0; color: var(--color-ink); }
+  .event-subtitle { color: var(--color-text-muted); margin: 4px 0 0; }
+  
+  /* No team state */
+  .no-team-card {
+    text-align: center;
+    padding: 60px 32px;
+    background: var(--color-surface);
+    border-radius: 16px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  
+  .no-team-icon { color: var(--color-border); margin-bottom: 16px; }
+  .no-team-card h2 { margin: 0 0 8px; color: var(--color-text); }
+  .no-team-card p { color: var(--color-text-muted); margin-bottom: 24px; }
+  
+  .no-team-actions {
+    display: flex;
+    gap: 12px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  /* Create team form */
+  .create-team-card {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  }
+  
+  .create-team-card h2 { margin: 0 0 20px; }
+  
+  .form-field { margin-bottom: 16px; }
+  .form-field label { display: block; font-weight: 600; margin-bottom: 6px; color: var(--color-text); }
+  .form-field input {
+    width: 100%;
+    padding: 10px 14px;
+    border: 1.5px solid var(--color-border);
+    border-radius: var(--radius-md);
+    font-size: 1rem;
+    box-sizing: border-box;
+  }
+  .form-field input:focus { border-color: var(--color-primary); outline: none; }
+  .form-field small { color: var(--color-text-faint); font-size: 0.82rem; margin-top: 4px; display: block; }
+  
+  .form-actions { display: flex; gap: 12px; margin-top: 20px; }
+  
+  /* Team card */
+  .team-card {
+    background: var(--color-surface);
+    border-radius: 16px;
+    padding: 28px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  
+  .team-header { display: flex; justify-content: space-between; align-items: flex-start; }
+  .team-header h2 { margin: 0 0 4px; color: var(--color-ink); }
+  .team-meta { color: var(--color-text-muted); margin: 0; font-size: 0.92rem; }
+  
+  .team-status-badge {
+    padding: 2px 10px;
+    border-radius: 20px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  .team-status-badge.forming { background: var(--color-warning-bg); color: var(--color-warning); }
+  .team-status-badge.complete { background: var(--color-success-bg); color: var(--color-success); }
+  .team-status-badge.cancelled { background: rgba(252, 228, 236, 0.14); color: var(--color-danger); }
+  
+  /* Invite code */
+  .invite-section {
+    background: rgba(243, 240, 255, 0.14);
+    border-radius: var(--radius-lg);
+    padding: 16px 20px;
+  }
+  
+  .invite-section h3 { margin: 0 0 12px; color: rgb(174, 169, 209); font-size: 0.95rem; }
+  
+  .invite-code-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: var(--color-surface);
+    border: 2px dashed var(--color-primary);
+    border-radius: var(--radius-md);
+    padding: 10px 16px;
+  }
+  
+  .invite-code {
+    font-family: 'Courier New', monospace;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+    color: var(--color-ink);
+    flex: 1;
+  }
+  
+  .copy-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    color: var(--color-primary);
+    display: flex;
+  }
+  
+  .link-btn {
+    background: none;
+    border: none;
+    color: var(--color-primary);
+    font-size: 0.85rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-top: 8px;
+    padding: 0;
+    text-decoration: underline;
+  }
+  
+  .invite-note { margin: 0; color: var(--color-text-muted); font-size: 0.9rem; }
+  
+  /* Progress */
+  .team-progress {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  
+  .progress-bar {
+    flex: 1;
+    height: 8px;
+    background: rgba(238, 238, 238, 0.14);
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+  }
+  
+  .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--color-primary), #48cae4);
+    border-radius: var(--radius-sm);
+    transition: width 0.4s ease;
+  }
+  
+  .team-progress span { font-size: 0.85rem; color: var(--color-text-muted); white-space: nowrap; }
+  
+  /* Members */
+  .members-section h3 { margin: 0 0 14px; color: var(--color-text); }
+  
+  .members-list { display: flex; flex-direction: column; gap: 10px; }
+  
+  .member-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--color-bg);
+    border-radius: var(--radius-md);
+    padding: 12px 16px;
+    border-left: 4px solid var(--color-border);
+  }
+  
+  .member-row.leader { border-left-color: var(--color-primary); background: rgba(243, 240, 255, 0.14); }
+  .member-row.accepted { border-left-color: var(--color-success); }
+  .member-row.pending { border-left-color: var(--color-warning); }
+  .member-row.declined { border-left-color: var(--color-danger); opacity: 0.6; }
+  
+  .member-info { display: flex; align-items: center; gap: 12px; }
+  
+  .member-avatar {
+    width: 38px;
+    height: 38px;
+    background: linear-gradient(135deg, var(--color-primary), #48cae4);
+    color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+  }
+  
+  .member-name { display: block; font-weight: 600; color: rgb(156, 156, 156); }
+  .member-email { display: block; font-size: 0.8rem; color: var(--color-text-faint); }
+  
+  .member-actions { display: flex; align-items: center; gap: 8px; }
+  
+  .member-role-badge {
+    padding: 3px 10px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+  .leader-badge { background: var(--color-primary); color: #fff; }
+  
+  .btn-approve-sm {
+    background: var(--color-success-bg);
+    color: var(--color-success);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .btn-approve-sm:hover { background: var(--color-success); color: #fff; }
+  
+  .btn-reject-sm {
+    background: rgba(252, 228, 236, 0.14);
+    color: var(--color-danger);
+    border: none;
+    border-radius: var(--radius-sm);
+    padding: 4px 10px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  .btn-reject-sm:hover { background: var(--color-danger); color: #fff; }
+  
+  .btn-remove-sm {
+    background: none;
+    border: none;
+    color: #999;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: var(--radius-sm);
+  }
+  .btn-remove-sm:hover { color: var(--color-danger); }
+  
+  .status-badge.pending { background: var(--color-warning-bg); color: var(--color-warning); padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; }
+  .status-badge.accepted { background: var(--color-success-bg); color: var(--color-success); padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; }
+  .status-badge.declined { background: rgba(252, 228, 236, 0.14); color: var(--color-danger); padding: 3px 10px; border-radius: 20px; font-size: 0.78rem; }
+  
+  .team-complete-banner {
+    background: linear-gradient(135deg, var(--color-success-bg), rgba(243, 240, 255, 0.14));
+    border: 2px solid var(--color-success);
+    border-radius: var(--radius-md);
+    padding: 16px 20px;
+    text-align: center;
+    font-weight: 600;
+    color: var(--color-success);
+    font-size: 1rem;
+  }

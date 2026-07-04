@@ -1,0 +1,119 @@
+.events-header {
+  margin-bottom: 2rem;
+}
+
+.events-header h1 {
+  font-size: 2rem;
+  color: var(--color-navy);
+  margin-bottom: 0.5rem;
+}
+
+.trending-section {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-accent-dark) 100%);
+  border-radius: var(--radius-lg);
+  color: white;
+}
+
+.trending-section h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.search-filters {
+  background: var(--color-surface);
+  padding: 1.5rem;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 2rem;
+}
+
+.search-box {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  background: var(--color-bg);
+  border-radius: var(--radius-md);
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  background: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.filters {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.filters select,
+.filters input[type="date"] {
+  padding: 0.5rem;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  font-size: 0.9rem;
+}
+
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+}
+
+.events-section h2 {
+  margin-bottom: 1rem;
+  color: var(--color-navy);
+}
+
+.event-card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.event-card {
+  background: var(--color-surface);
+  border-radius: var(--radius-md);
+  padding: 1.5rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.event-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.event-description {
+  color: var(--color-text-muted);
+  margin: 0.75rem 0;
+  flex: 1;
+}
+
+.event-tags {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  margin-top: 0.75rem;
+}
+
+.tag {
+  padding: 0.25rem 0.5rem;
+  background-color: var(--color-border-soft);
+  border-radius: var(--radius-sm);
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+}
