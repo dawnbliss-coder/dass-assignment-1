@@ -14,8 +14,8 @@ Felicity lets club organizers create and manage events (normal or merchandise-ba
 
 ## Deployed Website
 
-- Frontend: https://felicity-theta.vercel.app
-- Backend API: https://dass-assignment-1-hvly.onrender.com
+- Frontend: felicity-priyanka1104s-projects.vercel.app
+- Backend API: [https://dass-assignment-1-hvly.onrender.com](https://dass-assignment-1-hvly.onrender.com)
 
 ## Screenshots
 
